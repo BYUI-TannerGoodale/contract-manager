@@ -14,6 +14,7 @@ import { ContractsEditComponent } from './contracts/contracts-edit/contracts-edi
 import { ContractsListComponent } from './contracts/contracts-list/contracts-list.component';
 import { ContractsItemComponent } from './contracts/contracts-item/contracts-item.component';
 import { BulkContractAssignmentComponent } from './contracts/bulk-contract-assignment/bulk-contract-assignment.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { BulkContractAssignmentComponent } from './contracts/bulk-contract-assig
     ContractsItemComponent,
     BulkContractAssignmentComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

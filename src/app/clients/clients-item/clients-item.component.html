@@ -1,1 +1,8 @@
-<p>clients-item works!</p>
+<a [routerLink]="[client.id]" routerLinkActive="active" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group item-heading">{{ client.firstName + client.lastName }}</h4>
+  </div>
+<!--  <span class="pull-right">-->
+<!--    <div>{{ client?.contract?.title }}</div>-->
+<!--  </span>-->
+</a>

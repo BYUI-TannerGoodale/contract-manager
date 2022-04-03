@@ -1,8 +1,10 @@
+import {Contract} from "../contracts/contract.model";
+
 export class Client{
   constructor(
-    private id: number,
-    private firstName: string,
-    private lastName: string,
-    private contractId: number
+    public id: number,
+    public firstName: string,
+    public lastName: string
+    // public contract: Contract
   ) { };
 }
